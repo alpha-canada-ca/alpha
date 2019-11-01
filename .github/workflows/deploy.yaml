@@ -18,7 +18,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
           entrypoint: sh
-          args: -l -c "aws s3 sync /github/workspace/public/. s3://${{ secrets.AWS_BUCKET }} --delete"
+          args: -l -c "aws s3 sync /github/workspace/. s3://${{ secrets.AWS_BUCKET }} --delete --exclude='.git'
       - name: AWS Invalidate
         uses: docker://gcr.io/cdssnc/aws:latest
         env:
