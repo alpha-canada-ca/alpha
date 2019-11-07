@@ -1,0 +1,29 @@
+name: Deploy to master
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: AWS Deploy
+        uses: docker://gcr.io/cdssnc/aws:latest
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        with:
+          entrypoint: sh
+          args: -l -c "aws s3 sync /github/workspace/. s3://${{ secrets.AWS_BUCKET }} --delete --exclude='.git'"
+      - name: AWS Invalidate
+        uses: docker://gcr.io/cdssnc/aws:latest
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        with:
+          entrypoint: sh
+          args: -l -c "aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CF_ID }} --paths \"/*\""
