@@ -20,6 +20,6 @@ jobs:
           aws-region: ca-central-1
       - name: AWS Deploy
         run: |
-          aws s3 sync /github/workspace/. s3://${{ secrets.AWS_BUCKET }} --delete --exclude='.git'
+          aws s3 sync . s3://${{ secrets.AWS_BUCKET }} --delete --exclude='.git'
       - name: AWS Invalidate
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CF_ID }} --paths "/*"
