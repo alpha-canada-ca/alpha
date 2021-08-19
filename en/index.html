@@ -1,386 +1,368 @@
-<!DOCTYPE html>
+<!DOCTYPE
+ html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
+
 <head>
-<meta charset="utf-8">
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-<title>Alpha Canada.ca - Canada.ca</title>
-<meta content="width=device-width,initial-scale=1" name="viewport">
-<meta name="description" content="Alpha.canada.ca">
-<!--[if gte IE 9 | !IE ]><!-->
-<link
-	href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico"
-	rel="icon" type="image/x-icon">
-<link rel="stylesheet"
-	href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css">
-<link rel="stylesheet" href="../css/custom.css">
-<link rel="stylesheet" href="../css/alpha.css">
-<link rel="stylesheet" href="../css/reponsive-tables.css">
-<link rel="stylesheet" href="../css/jquery.dataTables.css">
+    <title>Alpha Canada.ca - Canada.ca</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="description" content="Alpha.canada.ca">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/alpha.css">
+    <link rel="stylesheet" href="../css/reponsive-tables.css">
+    <link rel="stylesheet" href="../css/jquery.dataTables.css">
 
-<script type="text/javascript" src="../js/jquery.dataTables.js"></script>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
 
 
 
 
-<!--<![endif]-->
-<!--[if lt IE 9]>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
 		<link href="./GCWeb/assets/favicon.ico" rel="shortcut icon" />
 
 		<link rel="stylesheet" href="./GCWeb/css/ie8-theme.min.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
-<!--[if lte IE 9]>
+    <!--[if lte IE 9]>
 
 
 		<![endif]-->
-<!-- Meta data -->
-<!-- Meta data-->
-<!-- Load closure template scripts -->
-<script type="text/javascript"
-	src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
-<script type="text/javascript"
-	src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
+    <!-- Meta data -->
+    <!-- Meta data-->
+    <!-- Load closure template scripts -->
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
 
 
-<!-- Write closure template -->
-<script type="text/javascript">
-	document.write(wet.builder.refTop({}));
-</script>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refTop({}));
+    </script>
 </head>
+
 <body vocab="http://schema.org/" typeof="WebPage">
-	<div id="def-top"></div>
-	<!-- Write closure template -->
-	<script type="text/javascript">
-		var defTop = document.getElementById("def-top");
-		defTop.outerHTML = wet.builder.top({
-			lngLinks : [ {
-				lang : "fr",
-				href : "../fr/index.html",
-				text : "Français"
-			} ],
-			breadcrumbs : [ {
-				title : "Home",
-				href : "https://www.canada.ca/en.html"
-			}, {
-				title : "About Canada.ca",
-				href : 'https://www.canada.ca/en/government/about.html'
-			} ],
-			search : true,
-			siteMenu : true,
-			showPreContent : true
-		});
-	</script>
+    <div id="def-top"></div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defTop = document.getElementById("def-top");
+        defTop.outerHTML = wet.builder.top({
+            lngLinks: [{
+                lang: "fr",
+                href: "../fr/index.html",
+                text: "Français"
+            }],
+            breadcrumbs: [{
+                title: "Home",
+                href: "https://www.canada.ca/en.html"
+            }, {
+                title: "About Canada.ca",
+                href: 'https://www.canada.ca/en/government/about.html'
+            }],
+            search: true,
+            siteMenu: true,
+            showPreContent: true
+        });
+    </script>
 
-	<main property="mainContentOfPage">
+    <main property="mainContentOfPage">
 
-	<div class="experimental bg-cover"
-		data-bgimg="../images/alpha-canada-bkg.jpg">
-		<div class="container p-0 p-sm-3">
-			<div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-				<h1 property="name" id="wb-cont" class="homeborder">alpha.canada.ca</h1>
-				<p class="mrgn-tp-md">Government of Canada experiments and
-					prototypes</p>
-			</div>
-		</div>
-	</div>
+        <div class="experimental bg-cover" data-bgimg="../images/alpha-canada-bkg.jpg">
+            <div class="container p-0 p-sm-3">
+                <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
+                    <h1 property="name" id="wb-cont" class="homeborder">alpha.canada.ca</h1>
+                    <p class="mrgn-tp-md">Government of Canada experiments and prototypes
+                    </p>
+                </div>
+            </div>
+        </div>
 
-	<div class="container">
-		<div class="row col-md-8 mrgn-tp-lg">
-			<p>
-				As part of the Government of Canada’s <a
-					href="https://www.canada.ca/en/innovation-hub/services/reports-resources/experimentation-direction-deputy-heads.html">
-					commitment to experimentation</a>, this web domain hosts experimental
-				and prototype websites and services. These websites and services are
-				continually evolving “alpha” products that are still in development
-				and are not ready for full public use.
-			</p>
+        <div class="container">
+            <div class="row col-md-8 mrgn-tp-lg">
+                <p>
+                    As part of the Government of Canada’s <a href="https://www.canada.ca/en/innovation-hub/services/reports-resources/experimentation-direction-deputy-heads.html">
+					commitment to experimentation</a>, this web domain hosts experimental and prototype websites and services. These websites and services are continually evolving “alpha” products that are still in development and are not ready for full public use.
+                </p>
 
-			<p>
-				This domain collects ongoing experiments in one place, to make it
-				easier for the government to collaborate and share its experiments.
-				They are publicly available in the spirit of <a
-					href="https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html">working
+                <p>
+                    This domain collects ongoing experiments in one place, to make it easier for the government to collaborate and share its experiments. They are publicly available in the spirit of <a href="https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html">working
 					in the open</a>.
-			</p>
-    </div>
-  
-		<div class="clearfix"></div>
-		<h2>Alpha websites and services</h2>
-		
-      <table>
-        <thead>
-      <tr class="bg-primary">
-				<th scope="col">Service name</th>
-				<th scope="col">Lead department or team</th>
-				<th scope="col">Feedback email address</th>
-			</tr>
-			</thead>
 
-			<tbody>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile">
-						<div class="clearfix"></div>
-						Micro Acquisition Pilot - <a href="https://micro-acquisition.alpha.canada.ca/en/index.html">micro-acquisition.alpha.canada.ca</a>
-					</td>
-					<td class="left-mobile" data-label="Lead department or team">
-						<div class="clearfix"></div>
-						Employment and Social Development Canada (ESDC)
-					</td>
-					<td class="left-mobile" data-label="Feedback email address">
-						<div class="clearfix"></div>
-						<a href="mailto:microacquisition@hrsdc-rhdcc.gc.ca">microacquisition@hrsdc-rhdcc.gc.ca</a>
-					</td>
-				</tr>
+                </p>
+            </div>
 
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile">
-						<div class="clearfix"></div>COVID-19 GC Web content inventory tool - <a
-							href="https://covid-19inventory.tbs.alpha.canada.ca/covid19_en.html">https://covid-19inventory.tbs.alpha.canada.ca</a>
-					</td>
-					<td class="left-mobile" data-label="Lead department or team">
-						<div class="clearfix">Digital Transformation Office</div>
-					</td>
-					<td class="left-mobile" data-label="Feedback email address">
-						<div class="clearfix"></div>
-						<a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a>
-					</td>
-				</tr>
-				
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile"><div
-							class="clearfix"></div>Wayfinding - <a
-						href="https://wayfinding.tbs.alpha.canada.ca">wayfinding.tbs.alpha.canada.ca</a></td>
-					<td class="left-mobile" data-label="Lead department or team"><div
-							class="clearfix">Digital Transformation Office</div></td>
-					<td class="left-mobile" data-label="Feedback email address"><div
-							class="clearfix"></div>
-						<a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a></td>
-				</tr>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile"><div
-							class="clearfix"></div>Medical Devices - <a
-						href="https://medical-devices.tbs.alpha.canada.ca">medical-devices.tbs.alpha.canada.ca</a></td>
-					<td class="left-mobile" data-label="Lead department or team"><div
-							class="clearfix">Digital Transformation Office</div></td>
-					<td class="left-mobile" data-label="Feedback email address"><div
-							class="clearfix"></div>
-						<a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a></td>
-				</tr>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile">
-						<div class="clearfix"></div>GC design system - <a
-							href="https://design.alpha.canada.ca/en.html">https://design.alpha.canada.ca</a>
-					</td>
-					<td class="left-mobile" data-label="Lead department or team">
-						<div class="clearfix">Digital Transformation Office</div>
-					</td>
-					<td class="left-mobile" data-label="Feedback email address">
-						<div class="clearfix"></div>
-						<a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a>
-					</td>
-				</tr>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile"><div
-							class="clearfix"></div>Pilot - <a
-						href="https://hc-sc.tbs.alpha.canada.ca">hc-sc.tbs.alpha.canada.ca</a></td>
-					<td class="left-mobile" data-label="Lead department or team"><div
-							class="clearfix">Health Canada & Digital Transformation Office</div></td>
-					<td class="left-mobile" data-label="Feedback email address"><div
-							class="clearfix"></div>
-						<a href="mailto:stephen.donnelly@canada.ca">stephen.donnelly@canada.ca</a></td>
-				</tr>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile"><div
-							class="clearfix"></div>Drupal Pilot - <a
-						href="https://drupal-pilot.cer.alpha.canada.ca">drupal-pilot.cer.alpha.canada.ca</a></td>
-					<td class="left-mobile" data-label="Lead department or team"><div
-							class="clearfix">Canada Energy Regulator & Digital Transformation Office</div></td>
-					<td class="left-mobile" data-label="Feedback email address"><div
-							class="clearfix"></div>
-						<a href="mailto:calen.henry@cer-rec.gc.ca">Calen Henry</a></td>
-				</tr>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile"><div
-							class="clearfix"></div>Web Templates - <a
-						href="https://web-templates.pspc.alpha.canada.ca">web-templates.pspc.alpha.canada.ca</a></td>
-					<td class="left-mobile" data-label="Lead department or team"><div
-							class="clearfix">Public Services and Procurement Canada & Digital Transformation Office</div></td>
-					<td class="left-mobile" data-label="Feedback email address"><div
-							class="clearfix"></div>
-						<a href="mailto:Jean-Michel.Duchesneau@tpsgc-pwgsc.gc.ca">Jean-Michel Duchesneau</a>
-					</td>
-				</tr>
-				
-				<tr class="d2">
-                    <td data-label="Service name" class="left-mobile"><div
-                            class="clearfix"></div>Web Optimization Strategy - <a
-                        href="https://crawos.tbs.alpha.canada.ca/en/landing/cra-web-optimization-strategy">crawos.tbs.alpha.canada.ca</a></td>
-                    <td class="left-mobile" data-label="Lead department or team"><div
-                            class="clearfix">Canada Revenue Agency & Digital Transformation Office</div></td>
-                    <td class="left-mobile" data-label="Feedback email address"><div
-                            class="clearfix"></div>
-                        <a href="mailto:andrew.tam@cra-arc.gc.ca">Andrew Tam</a>
+            <div class="clearfix"></div>
+            <h2>Alpha websites ands</h2>
+
+            <table>
+                <thead>
+                    <tr class="bg-primary">
+                        <th scope="col">Service name</th>
+                        <th scope="col">Lead department or team</th>
+                        <th scope="col">Feedback email address</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>COVID-19 GC Web content inventory tool - <a href="https://covid-19inventory.tbs.alpha.canada.ca/covid19_en.html">https://covid-19inventory.tbs.alpha.canada.ca</a>
+                        </td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a>
+                        </td>
+                    </tr>
+
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Wayfinding - <a href="https://wayfinding.tbs.alpha.canada.ca">wayfinding.tbs.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a></td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Medical Devices - <a href="https://medical-devices.tbs.alpha.canada.ca">medical-devices.tbs.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a></td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>GC design system - <a href="https://design.alpha.canada.ca/en.html">https://design.alpha.canada.ca</a>
+                        </td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:dto.btn@tbs-sct.gc.ca">dto.btn@tbs-sct.gc.ca</a>
+                        </td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Pilot - <a href="https://hc-sc.tbs.alpha.canada.ca">hc-sc.tbs.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Health Canada & Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:stephen.donnelly@canada.ca">stephen.donnelly@canada.ca</a></td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Drupal Pilot - <a href="https://drupal-pilot.cer.alpha.canada.ca">drupal-pilot.cer.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Canada Energy Regulator & Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:calen.henry@cer-rec.gc.ca">Calen Henry</a></td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Web Templates - <a href="https://web-templates.pspc.alpha.canada.ca">web-templates.pspc.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Public Services and Procurement Canada & Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:Jean-Michel.Duchesneau@tpsgc-pwgsc.gc.ca">Jean-Michel Duchesneau</a>
+                        </td>
+                    </tr>
+
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Web Optimization Strategy - <a href="https://crawos.tbs.alpha.canada.ca/en/landing/cra-web-optimization-strategy">crawos.tbs.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Canada Revenue Agency & Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:andrew.tam@cra-arc.gc.ca">Andrew Tam</a>
+                        </td>
+                    </tr>
+
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Drupal Pilot - <a href="https://ascpilot.tbs.alpha.canada.ca/en/accessibility-standards-canada-drupal-pilot">https://ascpilot.tbs.alpha.canada.ca/en/accessibility-standards-canada-drupal-pilot</a>
+                        </td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Accessibility Standards Canada & Digital Transformation Office</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:christina.richard@canada.gc.ca">christina.richard@canada.gc.ca</a>
+                        </td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Find financial help during COVID-19 - <a href="https://covid-benefits.alpha.canada.ca">https://covid-benefits.alpha.canada.ca</a>
+                        </td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix">Canadian Digital Service and Service Canada</div>
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:francois.morissette@hrsdc-rhdcc.gc.ca ">francois.morissette@hrsdc-rhdcc.gc.ca </a>
+                        </td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Government of Canada notification service - <a href="https://notification.alpha.canada.ca">notification.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix"></div>Canadian Digital Service</td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:cds-snc@tbs-sct.gc.ca">cds-snc@tbs-sct.gc.ca</a></td>
+                    </tr>
+
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Claim Tax Benefits - <a href="https://claim-tax-benefits.alpha.canada.ca">claim-tax-benefits.alpha.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix"></div>Canadian Digital Service & Canada Revenue Agency
+                        </td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:cds-snc@tbs-sct.gc.ca">cds-snc@tbs-sct.gc.ca</a></td>
+                    </tr>
+                    <tr class="d2">
+                        <td data-label="Service name" class="left-mobile">
+                            <div class="clearfix"></div>Service Canada Labs - <a href="https://alpha.service.canada.ca/">alpha.service.canada.ca</a></td>
+                        <td class="left-mobile" data-label="Lead department or team">
+                            <div class="clearfix"></div>Service Canada</td>
+                        <td class="left-mobile" data-label="Feedback email address">
+                            <div class="clearfix"></div>
+                            <a href="mailto:experience@servicecanada.gc.ca">experience@servicecanada.gc.ca</a></td>
+                    </tr>
+                  <tr class="d2">
+                    <td data-label="Service name" class="left-mobile">
+                      <div class="clearfix"></div>
+                      Micro Acquisition Pilot - <a href="https://micro-acquisition.alpha.canada.ca/en/index.html">micro-acquisition.alpha.canada.ca</a>
                     </td>
-				</tr>
-				
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile">
-						<div class="clearfix"></div>Drupal Pilot - <a
-							href="https://ascpilot.tbs.alpha.canada.ca/en/accessibility-standards-canada-drupal-pilot">https://ascpilot.tbs.alpha.canada.ca/en/accessibility-standards-canada-drupal-pilot</a>
-					</td>
-					<td class="left-mobile" data-label="Lead department or team">
-						<div class="clearfix">Accessibility Standards Canada & Digital Transformation Office</div>
-					</td>
-					<td class="left-mobile" data-label="Feedback email address">
-						<div class="clearfix"></div>
-						<a href="mailto:christina.richard@canada.gc.ca">christina.richard@canada.gc.ca</a>
-					</td>
-				</tr>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile">
-						<div class="clearfix"></div>Find financial help during COVID-19 - <a
-							href="https://covid-benefits.alpha.canada.ca">https://covid-benefits.alpha.canada.ca</a>
-					</td>
-					<td class="left-mobile" data-label="Lead department or team">
-						<div class="clearfix">Canadian Digital Service and Service Canada</div>
-					</td>
-					<td class="left-mobile" data-label="Feedback email address">
-						<div class="clearfix"></div>
-						<a href="mailto:francois.morissette@hrsdc-rhdcc.gc.ca ">francois.morissette@hrsdc-rhdcc.gc.ca </a>
-					</td>
-				</tr>
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile"><div
-							class="clearfix"></div>Government of Canada notification service
-						- <a href="https://notification.alpha.canada.ca">notification.alpha.canada.ca</a></td>
-					<td class="left-mobile" data-label="Lead department or team"><div
-							class="clearfix"></div>Canadian Digital Service</td>
-					<td class="left-mobile" data-label="Feedback email address"><div
-							class="clearfix"></div>
-						<a href="mailto:cds-snc@tbs-sct.gc.ca">cds-snc@tbs-sct.gc.ca</a></td>
-				</tr>
+                    <td class="left-mobile" data-label="Lead department or team">
+                      <div class="clearfix"></div>
+                      Employment and Social Development Canada (ESDC)
+                    </td>
+                    <td class="left-mobile" data-label="Feedback email address">
+                      <div class="clearfix"></div>
+                      <a href="mailto:microacquisition@hrsdc-rhdcc.gc.ca">microacquisition@hrsdc-rhdcc.gc.ca</a>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
 
-				<tr class="d2">
-					<td data-label="Service name" class="left-mobile"><div
-							class="clearfix"></div>Claim Tax Benefits - <a
-						href="https://claim-tax-benefits.alpha.canada.ca">claim-tax-benefits.alpha.canada.ca</a></td>
-					<td class="left-mobile" data-label="Lead department or team"><div
-							class="clearfix"></div>Canadian Digital Service & Canada Revenue
-						Agency</td>
-					<td class="left-mobile" data-label="Feedback email address"><div
-							class="clearfix"></div>
-						<a href="mailto:cds-snc@tbs-sct.gc.ca">cds-snc@tbs-sct.gc.ca</a></td>
-				</tr>
-			</tbody>
-			</table>
+            <div class="col-md-8 row">
+                <h2>Get an alpha.canada.ca subdomain</h2>
 
-			<div class="col-md-8 row">
-				<h2>Get an alpha.canada.ca subdomain</h2>
+                <p>If you’re a Government of Canada team interested in hosting a prototype on alpha.canada.ca, here’s what to do:</p>
 
-				<p>If you’re a Government of Canada team interested in hosting a
-					prototype on alpha.canada.ca, here’s what to do:</p>
-
-				<ol>
-					<li>Start by reviewing the <a href="./instructions.html">instructions
+                <ol>
+                    <li>Start by reviewing the <a href="./instructions.html">instructions
 							and requirements</a>
-					</li>
-					<li>When you're sure you meet the requirements, make a pull
-						request to the <a href="https://github.com/cds-snc/dns">DNS
+                    </li>
+                    <li>When you're sure you meet the requirements, make a pull request to the <a href="https://github.com/cds-snc/dns">DNS
 							repository</a>
-					</li>
-					<li>Once you receive notification that your pull request is
-						approved, provide contact information for your new alpha subdomain
-						to the <a href="mailto:dto.btn@tbs-sct.gc.ca">Digital
+                    </li>
+                    <li>Once you receive notification that your pull request is approved, provide contact information for your new alpha subdomain to the <a href="mailto:dto.btn@tbs-sct.gc.ca">Digital
 							Transformation Office</a>
-					</li>
-				</ol>
+                    </li>
+                </ol>
 
-				<p>
-					The alpha.canada.ca domain name is managed by the TBS <a
-						href="https://www.canada.ca/en/government/about/about-digital-transformation-office.html">Digital
+                <p>
+                    The alpha.canada.ca domain name is managed by the TBS <a href="https://www.canada.ca/en/government/about/about-digital-transformation-office.html">Digital
 						Transformation Office</a> and the <a href="https://digital.canada.ca/">Canadian
-						Digital Service</a>. For technical information, visit the <a
-						href="https://github.com/cds-snc/dns">DNS repository</a> on
-					GitHub.
-				</p>
+						Digital Service</a>. For technical information, visit the <a href="https://github.com/cds-snc/dns">DNS repository</a> on GitHub.
+                </p>
 
-				<p>
-					Questions? Contact the <a href="mailto:dto.btn@tbs-sct.gc.ca">Digital
+                <p>
+                    Questions? Contact the <a href="mailto:dto.btn@tbs-sct.gc.ca">Digital
 						Transformation Office</a>.
-				</p>
+                </p>
 
 
-				<h2>Definition of alpha phase:</h2>
-				<p>The "alpha" phase involves:</p>
-				<ul>
-					<li>building and iterating prototypes of a service</li>
-					<li>testing prototypes with users</li>
-					<li>validating the feasibility of a solution</li>
-				</ul>
+                <h2>Definition of alpha phase:</h2>
+                <p>The "alpha" phase involves:</p>
+                <ul>
+                    <li>building and iterating prototypes of a service</li>
+                    <li>testing prototypes with users</li>
+                    <li>validating the feasibility of a solution</li>
+                </ul>
 
-				<p>Building prototypes in the alpha phase allows service
-					improvement teams to:</p>
-				<ul>
-					<li>find the and fix problems with the design of a service</li>
-					<li>gather data to help inform future design choices</li>
-					<li>develop more detailed cost estimates</li>
-					<li>identify the potential risks for proceeding to "beta"
-						phase, as early as possible</li>
-					<li>determine if the solution should proceed to the "beta"
-						phase</li>
-				</ul>
+                <p>Building prototypes in the alpha phase allows service improvement teams to:</p>
+                <ul>
+                    <li>find the and fix problems with the design of a service</li>
+                    <li>gather data to help inform future design choices</li>
+                    <li>develop more detailed cost estimates</li>
+                    <li>identify the potential risks for proceeding to "beta" phase, as early as possible</li>
+                    <li>determine if the solution should proceed to the "beta" phase
+                    </li>
+                </ul>
 
-			</div>
-			<div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
 
-			<div id="def-preFooter"></div>
-			<!-- Write closure template -->
-			<script type="text/javascript">
-				var defPreFooter = document.getElementById("def-preFooter");
-				defPreFooter.outerHTML = wet.builder.preFooter({
-					dateModified : "August 13, 2019",
-					showPostContent : true,
-					showFeedback : true,
-					showShare : true
-				});
-			</script>
-		</div>
+            <div id="def-preFooter"></div>
+            <!-- Write closure template -->
+            <script type="text/javascript">
+                var defPreFooter = document.getElementById("def-preFooter");
+                defPreFooter.outerHTML = wet.builder.preFooter({
+                    dateModified: "August 13, 2019",
+                    showPostContent: true,
+                    showFeedback: true,
+                    showShare: true
+                });
+            </script>
+        </div>
 
-	</main>
+    </main>
 
 
-	<div id="def-footer"></div>
-	<!-- Write closure template -->
-	<script type="text/javascript">
-		var defFooter = document.getElementById("def-footer");
-		defFooter.outerHTML = wet.builder.footer({
-			showFooter : true,
-			showFeatures : true
-		});
-	</script>
-	<!-- Write closure template -->
-	<script type="text/javascript">
-		document.write(wet.builder.refFooter({}));
-	</script>
+    <div id="def-footer"></div>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        var defFooter = document.getElementById("def-footer");
+        defFooter.outerHTML = wet.builder.footer({
+            showFooter: true,
+            showFeatures: true
+        });
+    </script>
+    <!-- Write closure template -->
+    <script type="text/javascript">
+        document.write(wet.builder.refFooter({}));
+    </script>
 
-	<!--[if gte IE 9 | !IE ]><!-->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-	<script
-		src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
-	<!--<![endif]-->
-	<!--[if lt IE 9]>
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
 		<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
 
 		<![endif]-->
-	<script
-		src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
 
 </body>
+
 </html>
