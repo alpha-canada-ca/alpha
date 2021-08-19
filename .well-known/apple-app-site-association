@@ -4,11 +4,11 @@
     "details": [
       {
         "appID": "J7J9Q6KTWJ.ca.gc.hcsc.canada.covidalert.dev",
-        "paths": ["*"]
+        "paths": ["/covid-alert.html"]
       },
       {
         "appID": "J7J9Q6KTWJ.ca.gc.hcsc.canada.stopcovid",
-        "paths": ["*"]
+        "paths": ["/covid-alert.html"]
       }
     ]
   }
